@@ -1,0 +1,129 @@
+.dashboard_header{
+    margin-top: 2%;
+    width: 100%;
+    height: 17%;
+    display: flex;
+}
+
+.dashboard-cards{
+    width: 31%;
+    height: 100%;
+    display: flex;
+    color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 10px 16px 0 rgba(0, 0, 0, 0.3),
+    0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+
+.dashboard-cards .image{
+    width: 120px;
+    height: 120px;
+}
+
+.dashboard_sessions .image img{
+    width: 85%;
+    margin-top: 5%;
+    margin-left: 10%;
+}
+
+.dashboard_participants .image img{
+    width: 90%;
+    margin-top: -2%;
+    margin-left: 5%;
+}
+
+.dashboard_formateurs .image img{
+    width: 77%;
+    margin-top: 5%;
+    margin-left: 15%;
+}
+
+.dashboard_sessions{
+    margin: 0% 2% 0% 2%;
+    background-color: #ed7d31;
+}
+
+.dashboard_participants{
+    background-color: #00b050;
+}
+
+.dashboard_formateurs{
+    margin: 0% 2% 0% 2%;
+    background-color: #7030a0;
+}
+
+.dashboard-cards .info{
+    margin-top: 7%;
+    width: 40%;
+    height: 65%;
+}
+
+.dashboard-cards .info p{
+    text-align: center;
+}
+
+.dashboard-cards .info .info_stats{
+    font-size: 2em;
+}
+
+.dashboard-cards .info .info_domain{
+    margin-top: 10px;
+    font-size: 25px;
+}
+
+.dashboard_content{
+    height: 68.8%;
+    width: 100%;
+    display: flex;
+}
+
+.dashboard_content .trak_table{
+    min-height: 50%;
+    width: 300px;
+    margin-top: 5%;
+    margin-left: 0px;
+    margin-bottom: 20px;
+}
+.trak_table thead{
+    background-color: #5b9bd5;
+    color: #ffffff;
+}
+.trak_table tbody{
+    text-align: center;
+}
+.trak_table thead .track_header{
+    width: 20%;
+}
+.trak_table thead .sessions_header{
+    width: 30%;
+}
+
+.dashboard_content .top_formateurs{
+    min-height: 50%;
+    width: 40%;
+}
+.normal{
+    background-color: #eaeff7;
+}
+
+.dark{
+    background-color: #d2deef;
+}
+ table{
+  margin-top: 5px;
+  width: 300px;
+  margin-left: 20px;
+  border-collapse: collapse;
+  border-spacing: 0;
+  border: 1px solid #ddd;
+}
+
+ th,
+ td {
+  text-align: left;
+  padding: 16px;
+}
+
+ tr:nth-child(even) {
+  background-color: #ebe6e6;
+}

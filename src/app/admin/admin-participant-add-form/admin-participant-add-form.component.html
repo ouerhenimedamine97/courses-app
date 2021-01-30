@@ -1,0 +1,53 @@
+<header>
+    <h2>Ajouter un participant</h2>
+</header>
+<form #participantItemForm="ngForm" (ngSubmit)="addParticipant(participantItemForm.value)">
+
+
+    <ul>
+
+
+        <li>
+            <label for=" firstName ">Nom de Participant</label>
+            <input type="text" name="firstName" id="firstName" ngModel required>
+        </li>
+
+
+        <li>
+            <label for=" lastName ">Prenom de Participant</label>
+            <input type="text" name="lastName" id="lastName" ngModel required>
+        </li>
+
+        <li>
+            <label for="addresse ">Adresse de Participant</label>
+            <input type="text" name="addresse" id="addresse" ngModel required>
+        </li>
+
+        <li>
+            <label for=" mail ">E-mail de Participant</label>
+            <input type="email" name="mail" id="mail" ngModel required>
+        </li>
+
+        <li>
+            <label for=" company ">Societe de Participant</label>
+            <input type="text" name="company" id="company" ngModel required>
+        </li>
+
+
+        <li>
+            <label for="position">Poste de Participant</label>
+            <input type="text" name="position" id="position" ngModel required>
+        </li>
+
+
+    </ul>
+
+    <button type="submit" [disabled]="!participantItemForm.form.valid">Ajouter</button>
+
+
+</form>
+
+
+
+
+

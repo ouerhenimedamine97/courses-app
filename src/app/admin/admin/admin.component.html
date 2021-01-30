@@ -1,0 +1,47 @@
+<header>
+    <div class="logo">
+        <img src="../assets/logoAdmin.jpg" alt="logo" class="header-img ">
+        <span class="header-text">Espace Admin</span>
+    </div>
+        <div class="metaData">
+            <span class="header-text" >{{currentDate}}</span>
+            <img src="assets/deco-btn.png" class="header-img " />
+        </div>
+</header>
+
+<div class="content" style="margin-top: 70px;">
+    <div class="menu">
+
+
+    </div>
+    <div class="sidenav">
+        <div class="search-input">
+            <img src="../assets/search.png" alt="search icon">
+            <input type="text" name="search" id="search" placeholder="Cherchez formation ..">
+        </div>
+        <a routerLink="/admin"> <img src="../assets/dashboard.png" alt="Dashboard" class="nav-icon">
+            Dashboard</a>
+        <a routerLink="/admin/sessions/list"> <img src="../assets/sessions.png" alt="Sessions" class="nav-icon">
+            Sessions</a>
+        <a routerLink="/admin/formateur/list"> <img src="../assets/formateurs.png" alt="Formateurs" class="nav-icon"> Formateurs</a>
+        <a routerLink="/admin/participant/list"> <img src="../assets/participants.png" alt="Participants" class="nav-icon">
+            Participants</a>
+    </div>
+
+    <nav *ngIf=" currentUrl.includes('sessions')">
+        <a routerLink="/admin/sessions/list" routerLinkActive="active">
+            <img src="assets/list.png" class="icon"/>
+        </a>
+        <a routerLink="/admin/sessions/add" routerLinkActive="active">
+            <img src="assets/add.png" class="icon"/>
+        </a>
+        <a [routerLink]="['/admin/sessions/edit', 1]" routerLinkActive="active">
+            <img src="assets/edit.png" class="icon"/>
+        </a>
+    </nav>
+
+    <section [ngClass]="{'sessions-section' : currentUrl.includes('sessions')}" >
+        <router-outlet></router-outlet>
+    </section>
+</div>
+

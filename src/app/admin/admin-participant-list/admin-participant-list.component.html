@@ -1,0 +1,44 @@
+
+<body>
+<nav>
+    <a routerLink="/admin/participant/list" routerLinkActive="active">
+        <img id="refs" src="assets/refresh.png" class="icon"/>
+    </a>
+    <a routerLink="/admin/participant/add" routerLinkActive="active">
+        <img id="add" src="assets/add_2.png" class="icon"/>
+    </a>
+
+</nav>
+<header>
+    <h1>Liste des Participants </h1>
+
+</header>
+
+<section>
+
+
+
+        <table>
+            <tr>
+                <th>Nom</th>
+                <th>Prénom</th>
+                <th>Adresse</th>
+                <th>Email</th>
+                <th>Entreprise</th>
+                <th>Poste</th>
+                <th>Actions</th>
+            </tr>
+            <tr  *ngFor=" let participantItem of participantItems">
+                        <td>{{participantItem.firstName}}</td>
+                        <td>{{participantItem.lastName}}</td>
+                        <td>{{participantItem.addresse}}</td>
+                        <td>{{participantItem.mail}}</td>
+                        <td>{{participantItem.company}}</td>
+                        <td>{{participantItem.position}}</td>
+                        <td><a (click)="onDelete(participantItem)"><img id="supp" src="assets/delete.png"></a><a
+                                [routerLink]="['/admin/participant/edit',participantItem.id]"><img id="edit" src="assets/edit_2.png"></a>
+                        </td>
+            </tr>
+        </table>
+</section>
+</body>

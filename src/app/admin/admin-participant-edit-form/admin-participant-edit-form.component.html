@@ -1,0 +1,52 @@
+
+
+<header>
+    <h2>Modifier un Participant</h2>
+</header>
+
+<form #participantItemForm="ngForm" (ngSubmit)="editParticipant(participantItemForm.value)">
+
+    <ul>
+
+
+        <li>
+            <label for=" firstname ">Nom de Participant</label>
+            <input type="text" name="firstname" id="firstname" [(ngModel)]="participant.firstname"
+                   required>
+        </li>
+
+
+        <li>
+            <label for=" lastname ">Prenom de Participant</label>
+            <input type="text" name="lastname" id="lastname"
+                   [(ngModel)]="participant.lastname" required>
+        </li>
+
+        <li>
+            <label for=" adresse ">Adresse de Participant</label>
+            <input type="text" name="adresse" id="adresse"
+                   [(ngModel)]="participant.adresse" required>
+        </li>
+
+        <li>
+            <label for=" mail ">E-mail de Participant</label>
+            <input type="email" name="mail" id="mail" [(ngModel)]="participant.mail"
+                   required>
+        </li>
+
+        <li>
+            <label for=" company ">Societe de Participant</label>
+            <input type="text" name="company" id="company"
+                   [(ngModel)]="participant.company" required>
+        </li>
+
+
+        <li>
+            <label for=" position ">Poste de Participant</label>
+            <input type="text" name="position" id="position" [(ngModel)]="participant.position"
+                   required>
+        </li>
+
+    </ul>
+    <button type="submit" [disabled]="!participantItemForm.form.valid">Modifier</button>
+</form>

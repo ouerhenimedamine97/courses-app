@@ -1,0 +1,39 @@
+<body>
+    <nav>
+        <a routerLink="/admin/formateur/list">
+            <img id="refs" src="assets/refresh.png" class="icon" />
+        </a>
+        <a routerLink="/admin/formateur/add">
+            <img id="add" src="assets/add_2.png" class="icon" />
+        </a>
+
+    </nav>
+    <header>
+        <h1>Liste des Formateurs </h1>
+
+    </header>
+
+
+    <table>
+        <tr>
+            <th>Nom</th>
+            <th>Prénom</th>
+            <th>Adresse</th>
+            <th>Email</th>
+            <th>Domaine</th>
+            <th>Actions</th>
+        </tr>
+        <tr *ngFor=" let formateurItem of formateurItems">
+            <td>{{formateurItem.firstName}}</td>
+            <td>{{formateurItem.lastName}}</td>
+            <td>{{formateurItem.addresse}}</td>
+            <td>{{formateurItem.mail}}</td>
+            <td>{{formateurItem.field}}</td>
+            <td><a (click)="onDelete(formateurItem)"><img id="supp" src="assets/delete.png"></a>
+                <a [routerLink]="['/admin/formateur/edit',formateurItem.id]">
+                    <img id="edit" src="assets/edit_2.png"></a>
+            </td>
+        </tr>
+    </table>
+
+</body>

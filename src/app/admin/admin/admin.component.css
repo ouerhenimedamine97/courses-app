@@ -1,0 +1,198 @@
+:host {
+  font-family: Arial, Helvetica, sans-serif;
+}
+.content{
+  display: flex;
+  height: 100%;
+}
+.sessions-section{
+  background-color: #32435b;
+}
+nav {
+  display: flex;
+  flex-direction: column;
+  width: 70px;
+  margin-left: 20px;
+  background-color: #53ace4;
+}
+nav .icon {
+  width: 48px;
+  height: 48px;
+  margin: 10px;
+}
+section {
+  width: 100%;
+  background-color: #fff;
+}
+section > header {
+  color: #ffffff;
+  padding: 10px;
+}
+section > header > h1 {
+  font-size: 2em;
+}
+section > header .description {
+  font-style: italic;
+}
+
+
+
+
+.menu{
+  width: 28%;
+  background-color: #002060;
+}
+.search{
+  display: flex;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 30%;
+
+
+}
+
+.search-img{
+  max-width: 17%;
+  max-height: 17%;
+}
+
+.search-text{
+  height: 10%;
+  margin-top: 4%;
+  max-width: 80%;
+}
+
+.menu-content{
+  margin-top:10%;
+  width: 100%;
+}
+
+.menu-items{
+  margin-top: 10%;
+}
+
+.menu-items{
+  text-align:left;
+}
+
+.menu-items ul{
+  padding: 0px;
+}
+.menu-items li{
+  margin-top: 2%;
+  display: flex;
+  width: 100%;
+  text-transform: uppercase;
+  list-style-type:none;
+  list-style-position: inside;
+  color: #ffffff;
+  border-bottom: 3px solid #717b8f;
+}
+.menu-items li img{
+  width: 20%;
+  margin-left: 3%;
+  margin-right: 2%;
+  margin-bottom: 2%;
+}
+.menu-items li span{
+  margin-top: 7%;
+}
+.menu-items li span a{
+  color: #ffffff;
+  text-decoration: none;
+}
+
+app-admin {
+   height: 100%;
+ }
+header {
+  height: 70px;
+  background: #002060;
+  color: #bbbbbb;
+  top: 0;
+  width: 100%;
+  position: fixed;
+  margin-top: auto;
+  z-index: 100;
+}
+.logo {
+  float: left;
+  width: 25%;
+}
+ .header-img {
+  height: 50px;
+  vertical-align: middle;
+  margin-left: 20px;
+  margin-top: 10px;
+}
+
+.header-text {
+  font-weight: bold;
+  font-size: 20px;
+  color: white;
+  margin-left: 10px;
+}
+.metaData {
+width: 20%;
+float: right;
+}
+.sidenav {
+  height: 100%;
+  width: 22%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #002060;
+  overflow-x: hidden;
+  padding-top: 20px;
+  margin-top: 60px;
+  display: block;
+}
+
+.sidenav a {
+  padding: 13px;
+  text-decoration: none;
+  font-size: 25px;
+  color: white;
+  display: block;
+  border-bottom: white solid 1px;
+  height: 30px;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+/* Responsive Web Design Rules */
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+.search-input {
+  margin-bottom: 25px;
+  margin-top: 25px;
+}
+
+#search {
+  height: 30px;
+  width: 140px;
+  margin-left: 5px;
+}
+
+.search-input img {
+  vertical-align: middle;
+  height: 40px;
+
+}
+
+.nav-icon {
+  height: 30px;
+  vertical-align: middle;
+  margin-bottom: 5px;
+
+}
