@@ -11,21 +11,21 @@
 
         <li>
             <label for=" firstname ">Nom de Participant</label>
-            <input type="text" name="firstName" id="firstName" [(ngModel)]="participant.firstName"
+            <input type="text" name="lastName" id="lastName" [(ngModel)]="participant.lastName"
                    required>
         </li>
 
 
         <li>
-            <label for=" lastName ">Prenom de Participant</label>
-            <input type="text" name="lastName" id="lastName"
-                   [(ngModel)]="participant.lastName" required>
+            <label for=" lastName ">Prénom de Participant</label>
+            <input type="text" name="firsName" id="firsName"
+                   [(ngModel)]="participant.firsName" required>
         </li>
 
         <li>
             <label for=" addresse ">Adresse de Participant</label>
             <input type="text" name="addresse" id="addresse"
-                   [(ngModel)]="participant.addresse" required>
+                   [(ngModel)]="participant.addresse" >
         </li>
 
         <li>
@@ -37,14 +37,14 @@
         <li>
             <label for=" company ">Societe de Participant</label>
             <input type="text" name="company" id="company"
-                   [(ngModel)]="participant.company" required>
+                   [(ngModel)]="participant.company" >
         </li>
 
 
         <li>
             <label for=" position ">Poste de Participant</label>
             <input type="text" name="position" id="position" [(ngModel)]="participant.position"
-                   required>
+                   >
         </li>
 
     </ul>
